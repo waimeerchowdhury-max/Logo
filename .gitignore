@@ -1,0 +1,12 @@
+# build output (regenerate with `npm run build`)
+build/
+
+# toolchains
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# scratch space used while designing
+.tools/
+_probe*/

@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>theapostrophe — vector logo &amp; identity files</title>
+<meta name="description" content="Vector logo and identity files for theapostrophe photography: SVG masters, print PDF/EPS, PNG exports, icons and social templates.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="build/icons/apple-touch-icon-180.png">
+<meta property="og:title" content="theapostrophe — photography">
+<meta property="og:description" content="Vector identity: aperture badge + apostrophe, wordmark, print and screen files.">
+<meta property="og:image" content="build/social/og-1200x630.png">
+<style>
+  @font-face{font-family:Jost;src:url(assets/fonts/jost-400.woff2) format("woff2");font-weight:400;font-display:swap}
+  @font-face{font-family:Jost;src:url(assets/fonts/jost-500.woff2) format("woff2");font-weight:500;font-display:swap}
+  :root{
+    --ink:#16130E; --paper:#F7F3EC; --brass:#C08F2C; --muted:#6B6355; --line:#DED7C9;
+    --pad:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:Jost,"Helvetica Neue",Arial,sans-serif; font-weight:400;
+    line-height:1.55; letter-spacing:.005em;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 var(--pad)}
+  header{padding:clamp(28px,6vw,72px) 0 8px}
+  .logo{display:block;width:min(520px,80vw);height:auto}
+  .kicker{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin:26px 0 0}
+  h1{font-weight:500;font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;letter-spacing:-.015em;margin:.18em 0 .1em}
+  h2{font-weight:500;font-size:.82rem;letter-spacing:.26em;text-transform:uppercase;margin:0 0 18px}
+  h3{font-weight:500;font-size:1.02rem;margin:0 0 6px;letter-spacing:.01em}
+  p{margin:0 0 1em;max-width:64ch}
+  a{color:var(--ink)}
+  .lede{font-size:clamp(1.02rem,2vw,1.2rem);max-width:60ch;color:#2b261d}
+  section{padding:clamp(34px,6vw,64px) 0;border-top:1px solid var(--line)}
+  .grid{display:grid;gap:clamp(20px,3vw,40px)}
+  .two{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .three{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px}
+  .card.on-ink{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .card.on-ink h3,.card.on-ink p{color:var(--paper)}
+  .lockup{width:100%;height:auto;margin:12px 0 16px}
+  .mark{width:120px;height:auto;margin:8px 0 16px}
+  .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px}
+  .sw{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
+  .sw .chip{height:110px}
+  .sw .meta{padding:12px 14px}
+  .sw b{display:block;font-weight:500;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+  .sw code{font-size:.78rem;color:var(--muted);letter-spacing:.02em}
+  ul.files{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  ul.files li{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:10px}
+  ul.files a{font-weight:500;text-decoration:none;border-bottom:1px solid var(--brass)}
+  ul.files span{color:var(--muted);font-size:.88rem}
+  .pill{display:inline-block;border:1px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none}
+  .pill:hover{background:var(--ink);color:var(--paper)}
+  .type-spec{font-size:clamp(1.4rem,4vw,2.4rem);letter-spacing:.02em;line-height:1.25;font-weight:500;word-break:break-word}
+  .type-spec span{display:block;font-weight:400;font-size:.5em;letter-spacing:.04em;color:var(--muted);margin-top:.4em}
+  footer{padding:34px 0 60px;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line)}
+  .row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  @media (prefers-color-scheme:dark){
+    :root{--paper:#16130E;--ink:#F7F3EC;--muted:#B4AB9B;--line:#3A342A}
+    body{background:var(--paper);color:var(--ink)}
+    .card{background:#1F1B14;border-color:var(--line)}
+    .card.on-ink{background:#F7F3EC;color:#16130E}
+    .card.on-ink h3,.card.on-ink p{color:#16130E}
+    .sw{background:#1F1B14}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
+  <header>
+    <img class="logo" src="assets/theapostrophe-logo.svg" alt="theapostrophe — photography">
+    <p class="kicker">Vector identity · v1.0</p>
+    <h1>An aperture that&nbsp;is also an apostrophe.</h1>
+    <p class="lede">The badge is a camera iris — six blades around a six-sided opening — with the
+      apostrophe of <em>theapostrophe</em> standing in the light. The wordmark is set in Jost and
+      outlined, so every file opens the same on any machine.</p>
+    <div class="row">
+      <a class="pill" href="theapostrophe-logo-files.zip" download>Download all files</a>
+      <a class="pill" href="assets/theapostrophe-logo.svg" download>Primary logo (SVG)</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>The mark</h2>
+    <div class="grid two">
+      <div class="card">
+        <img class="mark" src="assets/theapostrophe-mark.svg" alt="theapostrophe badge">
+        <h3>Badge</h3>
+        <p>Iris ring, six blade corners and the apostrophe wedge. Built from exact circles and
+          arcs — no autotracing, ~4&nbsp;KB, scales to any size.</p>
+      </div>
+      <div class="card on-ink">
+        <img class="mark" src="assets/theapostrophe-mark-white.svg" alt="theapostrophe badge reversed">
+        <h3>Reversed</h3>
+        <p>The same geometry in paper white, for photographs, dark paper stock and dark UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lockups</h2>
+    <div class="grid two">
+      <div class="card">
+        <img class="lockup" src="assets/theapostrophe-stacked.svg" alt="theapostrophe stacked lockup">
+        <h3>Stacked</h3>
+        <p>For narrow spaces — profile pictures, banners, packaging labels.</p>
+      </div>
+      <div class="card">
+        <img class="lockup" src="assets/theapostrophe-wordmark.svg" alt="theapostrophe wordmark">
+        <h3>Wordmark</h3>
+        <p>Use alone where the badge is already present, or when the name must run large.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Colour</h2>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#16130E"></div><div class="meta"><b>Studio Ink</b><code>#16130E · CMYK 0/13/36/91</code></div></div>
+      <div class="sw"><div class="chip" style="background:#F7F3EC"></div><div class="meta"><b>Paper</b><code>#F7F3EC · CMYK 0/2/5/3</code></div></div>
+      <div class="sw"><div class="chip" style="background:#C08F2C"></div><div class="meta"><b>Brass · accent</b><code>#C08F2C · CMYK 0/25/77/25</code></div></div>
+    </div>
+    <p style="margin-top:20px;color:var(--muted)">Two colours carry the identity: Studio Ink on Paper.
+      Brass is a highlight only — a stamp, a foil detail, one link colour. Never a third background.</p>
+  </section>
+
+  <section>
+    <h2>Typeface</h2>
+    <p class="type-spec">Jost 500 · 400<span>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789 ’</span></p>
+    <p>Open-source (SIL OFL), geometric, quiet — it stays out of the way of photographs.
+      Lockups use 500; the <em>PHOTOGRAPHY</em> line is 400 with wide tracking.</p>
+  </section>
+
+  <section>
+    <h2>Files</h2>
+    <div class="grid two">
+      <ul class="files">
+        <li><a href="assets/theapostrophe-logo.svg" download>theapostrophe-logo.svg</a><span>primary lockup · master</span></li>
+        <li><a href="assets/theapostrophe-logo-white.svg" download>theapostrophe-logo-white.svg</a><span>reversed</span></li>
+        <li><a href="assets/theapostrophe-mark.svg" download>theapostrophe-mark.svg</a><span>badge</span></li>
+        <li><a href="assets/theapostrophe-stacked.svg" download>theapostrophe-stacked.svg</a><span>stacked</span></li>
+        <li><a href="assets/theapostrophe-wordmark.svg" download>theapostrophe-wordmark.svg</a><span>wordmark</span></li>
+        <li><a href="assets/favicon.svg" download>favicon.svg</a><span>simplified for tiny sizes</span></li>
+      </ul>
+      <ul class="files">
+        <li><a href="build/print/theapostrophe-primary.pdf">primary.pdf</a><span>vector PDF · true size, print-ready</span></li>
+        <li><a href="build/eps/theapostrophe-primary.eps">primary.eps</a><span>EPS · for old print pipelines</span></li>
+        <li><a href="build/png/theapostrophe-primary-4096.png">primary-4096.png</a><span>transparent raster</span></li>
+        <li><a href="build/png/theapostrophe-mark-2048.png">mark-2048.png</a><span>transparent raster</span></li>
+        <li><a href="build/social/og-1200x630.png">og-1200x630.png</a><span>social card</span></li>
+        <li><a href="build/brand/theapostrophe-identity-sheet.pdf">identity-sheet.pdf</a><span>brand sheet, A4</span></li>
+      </ul>
+    </div>
+    <p style="margin-top:20px;color:var(--muted)">Everything above is inside
+      <a href="theapostrophe-logo-files.zip" download>theapostrophe-logo-files.zip</a>.
+      Regenerate the whole set with <code>npm run build</code>.</p>
+  </section>
+
+  <footer>
+    <div class="row" style="justify-content:space-between">
+      <span>theapostrophe — photography · vector identity v1.0</span>
+      <span>Type: Jost (SIL OFL)</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
